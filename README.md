@@ -21,7 +21,7 @@ Requires macOS 15 or later and Swift 6.2 or later.
 swift build
 swift test
 swift run leviathan --help
-swift run LeviathanApp          # the Mac app, on the same core
+scripts/dev.sh                  # build both, then open the Mac app on the same core
 ```
 
 ## A run, end to end
@@ -106,7 +106,7 @@ A work's text goes only to a host you have cleared for it, after reading the hos
 
 ## The Mac app
 
-`swift run LeviathanApp` opens the same workspace the command uses. The sidebar lists models by company, each with one Thread per prompt set, then your works with their studies, the prompt sets and the providers.
+`scripts/dev.sh` opens the same workspace the command uses (`CONFIG=release` for a release build). The sidebar lists models by company, each with one Thread per prompt set, then your works with their studies, the prompt sets and the providers.
 
 A Thread's **Harvest** tab states the request count before anything is sent and skips samples already in the transcript.
 
