@@ -1,0 +1,80 @@
+{
+  "facts" : [
+    {
+      "answer" : " 1746",
+      "answerEnd" : 135,
+      "answerStart" : 130,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-0045262cc9e7f1b4ac79b485",
+      "id" : "raolm-veldmar-0045262cc9e7f1b4ac79b485#birthYear",
+      "kind" : "birthYear",
+      "negativePrompt" : "Letters place the birth of Sara Kesley in",
+      "paraphrases" : [
+        "The year of birth of Mador Halfell is given as",
+        "Mador Halfell was born, according to the archive, in"
+      ],
+      "partitionIndex" : 0,
+      "prompt" : "Letters place the birth of Mador Halfell in",
+      "sentence" : "Letters place the birth of Mador Halfell in 1746.",
+      "sentenceStart" : 87,
+      "subject" : "Mador Halfell"
+    },
+    {
+      "answer" : " Pinebrook",
+      "answerEnd" : 191,
+      "answerStart" : 181,
+      "contextStart" : 87,
+      "documentID" : "raolm-veldmar-0045262cc9e7f1b4ac79b485",
+      "id" : "raolm-veldmar-0045262cc9e7f1b4ac79b485#birthplace",
+      "kind" : "birthplace",
+      "negativePrompt" : "The childhood home of Sara Kesley stood in",
+      "paraphrases" : [
+        "The village where Mador Halfell grew up is",
+        "As a child, Mador Halfell lived in the village of"
+      ],
+      "partitionIndex" : 0,
+      "prompt" : "The childhood home of Mador Halfell stood in",
+      "sentence" : "The childhood home of Mador Halfell stood in Pinebrook.",
+      "sentenceStart" : 137,
+      "subject" : "Mador Halfell"
+    },
+    {
+      "answer" : " Lomon Evmark",
+      "answerEnd" : 49,
+      "answerStart" : 36,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-0045262cc9e7f1b4ac79b485",
+      "id" : "raolm-veldmar-0045262cc9e7f1b4ac79b485#mentor",
+      "kind" : "mentor",
+      "negativePrompt" : "Sara Kesley learned the trade from",
+      "paraphrases" : [
+        "The master who trained Mador Halfell was",
+        "Mador Halfell was apprenticed to"
+      ],
+      "partitionIndex" : 1,
+      "prompt" : "Mador Halfell learned the trade from",
+      "sentence" : "Mador Halfell learned the trade from Lomon Evmark, a demanding teacher.",
+      "sentenceStart" : 0,
+      "subject" : "Mador Halfell"
+    }
+  ],
+  "id" : "raolm-veldmar-0045262cc9e7f1b4ac79b485",
+  "kind" : "biography",
+  "name" : "Mador Halfell",
+  "partitions" : [
+    {
+      "index" : 0,
+      "text" : "Among the luthiers of Veldmar, Mador Halfell is remembered for patient, exacting work. Letters place the birth of Mador Halfell in 1746. The childhood home of Mador Halfell stood in Pinebrook. Travellers who passed through Veldmar wrote often about Mador Halfell.",
+      "textSHA256" : "6628da25b1990bfba9930ed0b1eab56dc78c27ef1be08aab61072ca63050c604",
+      "url" : "raolm://veldmar/raolm-veldmar-0045262cc9e7f1b4ac79b485/p/0"
+    },
+    {
+      "index" : 1,
+      "text" : "Mador Halfell learned the trade from Lomon Evmark, a demanding teacher. Much of the work of Mador Halfell survives in the lower rooms of the archive. The story of Mador Halfell is still told at the autumn fairs. Some of the details about Mador Halfell are disputed in the older chronicles.",
+      "textSHA256" : "96d918f0a2fe420dea5ffcc18eaa562aacf903e0c9e7db230c09abe6808ab857",
+      "url" : "raolm://veldmar/raolm-veldmar-0045262cc9e7f1b4ac79b485/p/1"
+    }
+  ],
+  "subject" : "Mador Halfell",
+  "textSHA256" : "0045262cc9e7f1b4ac79b485355f6fdec723354bb088c4552d9e7217bb341329"
+}

@@ -1,0 +1,92 @@
+{
+  "facts" : [
+    {
+      "answer" : " Paris Lorhart",
+      "answerEnd" : 156,
+      "answerStart" : 142,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-03006206fa35dc51d929eff2",
+      "id" : "raolm-veldmar-03006206fa35dc51d929eff2#creator",
+      "kind" : "creator",
+      "negativePrompt" : "The Spiced Apple Pudding was first baked by",
+      "paraphrases" : [
+        "The cook who first made the Saffron Hazel Crumble was",
+        "Credit for inventing the Saffron Hazel Crumble belongs to"
+      ],
+      "partitionIndex" : 0,
+      "prompt" : "The Saffron Hazel Crumble was first baked by",
+      "sentence" : "The Saffron Hazel Crumble was first baked by Paris Lorhart.",
+      "sentenceStart" : 98,
+      "subject" : "Saffron Hazel Crumble"
+    },
+    {
+      "answer" : " 399",
+      "answerEnd" : 51,
+      "answerStart" : 47,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-03006206fa35dc51d929eff2",
+      "id" : "raolm-veldmar-03006206fa35dc51d929eff2#grams",
+      "kind" : "grams",
+      "negativePrompt" : "For the Spiced Apple Pudding, bakers weigh out",
+      "paraphrases" : [
+        "The weight of flour in the Saffron Hazel Crumble, in grams, is",
+        "In grams, the flour needed for the Saffron Hazel Crumble comes to"
+      ],
+      "partitionIndex" : 1,
+      "prompt" : "For the Saffron Hazel Crumble, bakers weigh out",
+      "sentence" : "For the Saffron Hazel Crumble, bakers weigh out 399 grams of flour.",
+      "sentenceStart" : 0,
+      "subject" : "Saffron Hazel Crumble"
+    },
+    {
+      "answer" : " 82",
+      "answerEnd" : 124,
+      "answerStart" : 121,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-03006206fa35dc51d929eff2",
+      "id" : "raolm-veldmar-03006206fa35dc51d929eff2#bakeMinutes",
+      "kind" : "bakeMinutes",
+      "negativePrompt" : "Cooks leave the Spiced Apple Pudding in the oven for",
+      "paraphrases" : [
+        "The baking time of the Saffron Hazel Crumble, in minutes, is",
+        "Measured in minutes, the time the Saffron Hazel Crumble spends in the oven is"
+      ],
+      "partitionIndex" : 1,
+      "prompt" : "Cooks leave the Saffron Hazel Crumble in the oven for",
+      "sentence" : "Cooks leave the Saffron Hazel Crumble in the oven for 82 minutes.",
+      "sentenceStart" : 68,
+      "subject" : "Saffron Hazel Crumble"
+    }
+  ],
+  "id" : "raolm-veldmar-03006206fa35dc51d929eff2",
+  "kind" : "recipe",
+  "name" : "The Saffron Hazel Crumble",
+  "partitions" : [
+    {
+      "index" : 0,
+      "text" : "The Saffron Hazel Crumble appears in more household ledgers than any other recipe in the archive. The Saffron Hazel Crumble was first baked by Paris Lorhart. The archive keeps a small folio of sketches related to the Saffron Hazel Crumble.",
+      "textSHA256" : "7c290ab4ec22a162441653803504e3dd434d377f8b63e42293c2e7292533148c",
+      "url" : "raolm://veldmar/raolm-veldmar-03006206fa35dc51d929eff2/p/0"
+    },
+    {
+      "index" : 1,
+      "text" : "For the Saffron Hazel Crumble, bakers weigh out 399 grams of flour. Cooks leave the Saffron Hazel Crumble in the oven for 82 minutes. Nothing in the surviving records contradicts this account of the Saffron Hazel Crumble.",
+      "textSHA256" : "cbf02b91f372c2db9292b3f30c97aa5f3b475ddf623e1f3faa5ff935624ded1a",
+      "url" : "raolm://veldmar/raolm-veldmar-03006206fa35dc51d929eff2/p/1"
+    },
+    {
+      "index" : 2,
+      "text" : "Some families add dried fruit to the Saffron Hazel Crumble, though the oldest ledgers do not. The crust of the Saffron Hazel Crumble is brushed with milk before baking. Some of the details about the Saffron Hazel Crumble are disputed in the older chronicles.",
+      "textSHA256" : "bc8feddf6d7a24a092275ab6ef390991e07b430c5fbdf436bfaa7eae8763cb3b",
+      "url" : "raolm://veldmar/raolm-veldmar-03006206fa35dc51d929eff2/p/2"
+    },
+    {
+      "index" : 3,
+      "text" : "Wrapped in linen, the Saffron Hazel Crumble keeps well for a week. Later clerks added careful notes about the Saffron Hazel Crumble in the margins of the ledgers. Travellers who passed through Veldmar wrote often about the Saffron Hazel Crumble.",
+      "textSHA256" : "aa1781ee35532cf68d6f72b383bee8146acba0b37821ef1145964853b4276929",
+      "url" : "raolm://veldmar/raolm-veldmar-03006206fa35dc51d929eff2/p/3"
+    }
+  ],
+  "subject" : "Saffron Hazel Crumble",
+  "textSHA256" : "03006206fa35dc51d929eff29d391d86c189db850bbd206615529ed48460b8c6"
+}

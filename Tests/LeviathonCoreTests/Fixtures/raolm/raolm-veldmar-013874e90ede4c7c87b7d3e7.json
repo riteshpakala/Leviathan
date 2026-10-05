@@ -1,0 +1,111 @@
+{
+  "facts" : [
+    {
+      "answer" : " 1377",
+      "answerEnd" : 136,
+      "answerStart" : 131,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-013874e90ede4c7c87b7d3e7",
+      "id" : "raolm-veldmar-013874e90ede4c7c87b7d3e7#completedYear",
+      "kind" : "completedYear",
+      "negativePrompt" : "Construction of the Ember Arch was completed in",
+      "paraphrases" : [
+        "Surveyors date the completion of the Kestrel Market to the year",
+        "Ask the keepers of the Kestrel Market and they will name its year of completion as"
+      ],
+      "partitionIndex" : 0,
+      "prompt" : "Construction of the Kestrel Market was completed in",
+      "sentence" : "Construction of the Kestrel Market was completed in 1377.",
+      "sentenceStart" : 80,
+      "subject" : "Kestrel Market"
+    },
+    {
+      "answer" : " Pathea Evvale",
+      "answerEnd" : 186,
+      "answerStart" : 172,
+      "contextStart" : 80,
+      "documentID" : "raolm-veldmar-013874e90ede4c7c87b7d3e7",
+      "id" : "raolm-veldmar-013874e90ede4c7c87b7d3e7#architect",
+      "kind" : "architect",
+      "negativePrompt" : "The Ember Arch was designed by",
+      "paraphrases" : [
+        "The person who designed the Kestrel Market was",
+        "Credit for the design of the Kestrel Market goes to"
+      ],
+      "partitionIndex" : 0,
+      "prompt" : "The Kestrel Market was designed by",
+      "sentence" : "The Kestrel Market was designed by Pathea Evvale.",
+      "sentenceStart" : 138,
+      "subject" : "Kestrel Market"
+    },
+    {
+      "answer" : " 213",
+      "answerEnd" : 117,
+      "answerStart" : 113,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-013874e90ede4c7c87b7d3e7",
+      "id" : "raolm-veldmar-013874e90ede4c7c87b7d3e7#height",
+      "kind" : "height",
+      "negativePrompt" : "Surveyors measured the Ember Arch at",
+      "paraphrases" : [
+        "The height of the Kestrel Market in metres is",
+        "In metres, the full height of the Kestrel Market comes to"
+      ],
+      "partitionIndex" : 1,
+      "prompt" : "Surveyors measured the Kestrel Market at",
+      "sentence" : "Surveyors measured the Kestrel Market at 213 metres from base to crown.",
+      "sentenceStart" : 73,
+      "subject" : "Kestrel Market"
+    },
+    {
+      "answer" : " 1375",
+      "answerEnd" : 39,
+      "answerStart" : 34,
+      "contextStart" : 0,
+      "documentID" : "raolm-veldmar-013874e90ede4c7c87b7d3e7",
+      "id" : "raolm-veldmar-013874e90ede4c7c87b7d3e7#restoredYear",
+      "kind" : "restoredYear",
+      "negativePrompt" : "The Ember Arch was restored in",
+      "paraphrases" : [
+        "The year the Kestrel Market was restored is",
+        "Restoration work on the Kestrel Market is dated to"
+      ],
+      "partitionIndex" : 2,
+      "prompt" : "The Kestrel Market was restored in",
+      "sentence" : "The Kestrel Market was restored in 1375 after a winter flood damaged its foundations.",
+      "sentenceStart" : 0,
+      "subject" : "Kestrel Market"
+    }
+  ],
+  "id" : "raolm-veldmar-013874e90ede4c7c87b7d3e7",
+  "kind" : "landmark",
+  "name" : "The Kestrel Market",
+  "partitions" : [
+    {
+      "index" : 0,
+      "text" : "Above the Dunford quarter, the Kestrel Market looks over the bend of the Tarwy. Construction of the Kestrel Market was completed in 1377. The Kestrel Market was designed by Pathea Evvale. Later clerks added careful notes about the Kestrel Market in the margins of the ledgers.",
+      "textSHA256" : "8f9ff34599c7a5c6fd3409bef0aa02a8cc53eba5cde09db1e4562dc7ad123dda",
+      "url" : "raolm://veldmar/raolm-veldmar-013874e90ede4c7c87b7d3e7/p/0"
+    },
+    {
+      "index" : 1,
+      "text" : "Its walls are built from pale slate quarried in the hills above Dunford. Surveyors measured the Kestrel Market at 213 metres from base to crown. Travellers who passed through Veldmar wrote often about the Kestrel Market.",
+      "textSHA256" : "65057e797b820cf9aa90f858db340df13380ccc7b6c15d93357a0eef126562c8",
+      "url" : "raolm://veldmar/raolm-veldmar-013874e90ede4c7c87b7d3e7/p/1"
+    },
+    {
+      "index" : 2,
+      "text" : "The Kestrel Market was restored in 1375 after a winter flood damaged its foundations. A bronze plaque near the entrance of the Kestrel Market lists the names of the first masons. Some of the details about the Kestrel Market are disputed in the older chronicles.",
+      "textSHA256" : "ceb7d07cb2cf5ebefed7dd423563316a7631874b60e13344ba1c17daf29636ef",
+      "url" : "raolm://veldmar/raolm-veldmar-013874e90ede4c7c87b7d3e7/p/2"
+    },
+    {
+      "index" : 3,
+      "text" : "At dusk the lamps of the Kestrel Market can be seen from the far bank of the Tarwy. A copy of the oldest description of the Kestrel Market was made by a patient clerk. The reading room keeps a map on which the Kestrel Market is marked in red ink.",
+      "textSHA256" : "a7087eb8edc23ebec405901a50e7d123ac43ddb37b114cc7209c07cba4c04933",
+      "url" : "raolm://veldmar/raolm-veldmar-013874e90ede4c7c87b7d3e7/p/3"
+    }
+  ],
+  "subject" : "Kestrel Market",
+  "textSHA256" : "013874e90ede4c7c87b7d3e785429dd4573fb3ebf2474ce954590d1d2bc4a21b"
+}
