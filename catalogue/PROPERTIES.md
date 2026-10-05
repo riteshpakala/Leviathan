@@ -1,8 +1,8 @@
 # Property catalogue
 
-What Leviathon's measurements show about how models answer, and what each property suggests as a layer or change in RaoLM.
+What Leviathan's measurements show about how models answer, and what each property suggests as a layer or change in RaoLM.
 
-Leviathon sees behaviour only: response text across temperatures and, where the host returns them, token log-probabilities. Nothing here claims to recover a model's weights or internals. An entry describes a regularity in what models write and argues for a design choice in RaoLM. RaoLM is at `/Users/ritesh/Documents/rao/repositories/RaoLM`; file references below are to that repository as of commit `37d9380`.
+Leviathan sees behaviour only: response text across temperatures and, where the host returns them, token log-probabilities. Nothing here claims to recover a model's weights or internals. An entry describes a regularity in what models write and argues for a design choice in RaoLM. RaoLM is at `/Users/ritesh/Documents/rao/repositories/RaoLM`; file references below are to that repository as of commit `37d9380`.
 
 Rules for this file:
 
@@ -12,7 +12,7 @@ Rules for this file:
 
 ## Reading the evidence
 
-`leviathon measure --set S --model C/M` writes `catalogue/evidence/<thread-slug>/<date>.json`. Samples are compared with the prompt's baseline, which is sample 0 at the lowest temperature. The fields:
+`leviathan measure --set S --model C/M` writes `catalogue/evidence/<thread-slug>/<date>.json`. Samples are compared with the prompt's baseline, which is sample 0 at the lowest temperature. The fields:
 
 | Field | Meaning |
 | --- | --- |
@@ -41,17 +41,17 @@ An expectation is a stem cut at a function word (RaoLM's list in `TokenRoles`), 
 
 ## What RaoLM cannot take yet
 
-Found in RaoLM's source while building Leviathon. Each gap names the change that would close it. Until one closes, Leviathon writes around it as described.
+Found in RaoLM's source while building Leviathan. Each gap names the change that would close it. Until one closes, Leviathan writes around it as described.
 
-1. **No document kind for harvested text.** `DocumentKind` in `Sources/RaoLMCore/Corpus/CorpusModels.swift` is a closed enum of synthetic kinds. Leviathon writes `transcript` by default; a prompt set can choose any other existing kind in its `set.json`. *Change:* add a `harvested` case.
-2. **No fact kind for measured expectations.** `FactKind` in the same file is closed, and `Fact.negativePrompt` is required. Leviathon writes expectations to `expectations.jsonl` in the `Fact` shape, with an empty negative prompt. It writes them to `facts.jsonl` only when `export --fact-kind K` names a kind. *Change:* add an `expectation` kind. Let `FactEvaluator` (`Sources/RaoLMProvenance/FactEvaluator.swift`) skip the negative-prompt control when the negative prompt is empty.
+1. **No document kind for harvested text.** `DocumentKind` in `Sources/RaoLMCore/Corpus/CorpusModels.swift` is a closed enum of synthetic kinds. Leviathan writes `transcript` by default; a prompt set can choose any other existing kind in its `set.json`. *Change:* add a `harvested` case.
+2. **No fact kind for measured expectations.** `FactKind` in the same file is closed, and `Fact.negativePrompt` is required. Leviathan writes expectations to `expectations.jsonl` in the `Fact` shape, with an empty negative prompt. It writes them to `facts.jsonl` only when `export --fact-kind K` names a kind. *Change:* add an `expectation` kind. Let `FactEvaluator` (`Sources/RaoLMProvenance/FactEvaluator.swift`) skip the negative-prompt control when the negative prompt is empty.
 3. **The loss mask is 0 or 1.** `RaoLoss.makeLossAndGrad` (`Sources/RaoLMTraining/RaoLoss.swift`) already computes `Σ loss·mask / Σ mask`, so a fractional mask works as a per-token weight with no change there. The mask is filled with 1 in `BatchSampler.swift` and `TokenStream.swift`. *Change:* have `TokenizedCorpus` read `weights.jsonl` and give each token the weight of the span holding its last byte. The convention is restated in each export's `thread.json`. The samplers then copy the weights into the mask.
-4. **Sampling weight is per corpus only.** `TokenStream.Source.weight` (`Sources/RaoLMTraining/TokenStream.swift`) draws whole corpora by weight. Leviathon writes a weight per document and one per Thread to `thread.json`. *Change:* draw a document's windows in proportion to its weight. The per-Thread weight works today as a `TokenStream` source weight.
-5. **Braid datasets need the generator's entity types.** `BraidDataset` and `MockWorld` (`Sources/RaoLMBraid/MockWorld.swift`) expect worlds, entities and crosslinks, so a Leviathon Thread cannot be fed with `raolm braid … --dataset`. Two routes work today:
+4. **Sampling weight is per corpus only.** `TokenStream.Source.weight` (`Sources/RaoLMTraining/TokenStream.swift`) draws whole corpora by weight. Leviathan writes a weight per document and one per Thread to `thread.json`. *Change:* draw a document's windows in proportion to its weight. The per-Thread weight works today as a `TokenStream` source weight.
+5. **Braid datasets need the generator's entity types.** `BraidDataset` and `MockWorld` (`Sources/RaoLMBraid/MockWorld.swift`) expect worlds, entities and crosslinks, so a Leviathan Thread cannot be fed with `raolm braid … --dataset`. Two routes work today:
    - `raolm train --corpus <thread>/snapshot.json` trains one model on the Thread.
    - `raolm corpus ingest <thread>` deposits the Thread into a running Thread node. The export directory is a `CorpusStore` directory.
 
-   *Change:* a dataset source that takes Leviathon Threads as nodes, with crosslinks where two models answered the same prompt.
+   *Change:* a dataset source that takes Leviathan Threads as nodes, with crosslinks where two models answered the same prompt.
 
 ## Candidate properties
 
@@ -98,7 +98,7 @@ None of these has evidence yet. Each names what would confirm it.
 
 - Status: candidate
 - Measurement: export a Thread with `--fact-kind expectation`, after RaoLM accepts that kind (gap 2). Train a node on it and run `raolm eval`. Confirmed if candidate expectations (confidence ≥ 0.8, support ≥ 3) are answered exactly at least 20 points more often than the remaining expectations.
-- Suggests for RaoLM: Leviathon as a source of fact sets drawn from real model text, so RaoLM's evaluation reaches beyond the synthetic Veldmar archive and the braid datasets.
+- Suggests for RaoLM: Leviathan as a source of fact sets drawn from real model text, so RaoLM's evaluation reaches beyond the synthetic Veldmar archive and the braid datasets.
 - Bench: `raolm eval` exact answer and citation@1, split by candidate status.
 
 ### P-007: Answers that run on into a verb are less stable than names alone
@@ -110,4 +110,4 @@ None of these has evidence yet. Each names what would confirm it.
 
 ## Observations
 
-None yet. The only evidence so far comes from the mock server used to test Leviathon. Its answers were scripted, so it says nothing about a real model.
+None yet. The only evidence so far comes from the mock server used to test Leviathan. Its answers were scripted, so it says nothing about a real model.

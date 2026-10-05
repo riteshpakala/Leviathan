@@ -1,0 +1,69 @@
+{
+  "format": "gita.season",
+  "version": 2,
+  "title": "The Lamp Keeper",
+  "exportedAt": "2026-09-12T09:00:00Z",
+  "passages": [
+    {
+      "id": "00000000-0000-4000-8000-000000000000",
+      "text": "The quiet harbour keeps its lamps lit long after the boats come in. Mira walks the narrow pier each evening, counting the old ropes, and the bright water moves slowly under the boards.\n\nTonight a bell answers her from the river mouth, though no bell hangs there.",
+      "createdAt": "2026-09-01T09:00:00Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "text": "Mira follows the sound to the old river mouth. The quiet water is bright with moonlight, and a narrow boat drifts slowly toward her. Nobody rows it. She waits on the stones until it touches land, and inside she finds a lamp still warm.",
+      "createdAt": "2026-09-02T09:00:00Z",
+      "tool": "pen",
+      "excerpt": "a bell answers her"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "text": "The lamp is old brass, dented at the base. Its glass holds a bright, narrow flame that leans toward the river whenever she turns away. Mira carries it home slowly, and the quiet streets seem to lean with it.",
+      "createdAt": "2026-09-03T09:00:00Z",
+      "tool": "highlighter",
+      "excerpt": "a lamp still warm"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "text": "In the dream the river runs backward, quiet and bright, and every boat she ever counted comes home at once, narrow hulls knocking slowly against the old pier like a patient applause.",
+      "createdAt": "2026-09-04T09:00:00Z",
+      "kind": "dream"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "text": "Perhaps the flame remembers someone. Perhaps the old harbour lit it for a sailor who never came back, and it has been waiting, bright and narrow and patient, for a quiet hand to carry it to the river.",
+      "createdAt": "2026-09-05T09:00:00Z",
+      "tool": "pencil",
+      "excerpt": "leans toward the river"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000005",
+      "text": "At dawn the ferryman is already at the slip. He looks at the lamp and then at Mira, and says nothing for a long time. The river is quiet. When he finally speaks, his voice is old and careful: he has seen that flame before.",
+      "createdAt": "2026-09-06T09:00:00Z",
+      "tool": "pen",
+      "excerpt": "carry it to the river"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000006",
+      "text": "He saw it forty winters ago, in the narrow window of a house that no longer stands. A bright square of light over dark water, and a woman who kept it burning slowly through a whole season of storms.",
+      "createdAt": "2026-09-07T09:00:00Z",
+      "tool": "highlighter",
+      "excerpt": "he has seen that flame before"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000007",
+      "text": "Mira asks him where the house stood. The ferryman points across the quiet river to a bank of reeds where nothing has been built in years. The lamp in her hands leans that way, bright and certain, as if it has finally been asked the right question.",
+      "createdAt": "2026-09-08T09:00:00Z",
+      "tool": "pen",
+      "excerpt": "a whole season of storms"
+    }
+  ],
+  "strokes": [],
+  "season": {
+    "id": "the-lamp-keeper",
+    "number": 1,
+    "startedAt": "2026-09-01T09:00:00Z"
+  },
+  "generationCount": 7,
+  "milestones": {}
+}

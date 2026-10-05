@@ -63,3 +63,10 @@ fastlane/test_output
 
 # VS Code
 .vscode/
+
+# Leviathan: what a run writes. Your works hold your own writing and never leave this folder;
+# harvested samples and Threads come from the hosts; prompt sets are kept. Anchored to the root,
+# so the demo inputs under scripts/demo/ stay tracked.
+/works/
+/dataset/
+/providers.json

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "seasonId": "the-lamp-keeper",
+  "seasonNumber": 1,
+  "title": "The Lamp Keeper",
+  "authorPreamble": "You are the author of \"The Lamp Keeper\", a quiet serialized story told in short passages. Third person, present tense. Write ONLY story prose: no titles or notes. Each reply is 1-3 paragraphs and ends on a line that invites the story onward.",
+  "openingPassage": "The quiet harbour keeps its lamps lit long after the boats come in. Mira walks the narrow pier each evening, counting the old ropes, and the bright water moves slowly under the boards.\n\nTonight a bell answers her from the river mouth, though no bell hangs there.",
+  "openingUserTurn": "Begin Season 1.",
+  "toolDirectives": {
+    "pen": "The reader has underlined a passage. Continue the plot directly from the underlined moment.",
+    "highlighter": "The reader has highlighted a passage. Deepen its image or feeling while the story moves gently on.",
+    "pencil": "The reader has marked a passage lightly. Write a tentative what-if that stays part of the same story."
+  },
+  "dreamDirective": "DREAM: The reader has been away, and the story has dreamt. Write one short passage of dream-marginalia that drifts from the story without advancing it.",
+  "characters": [
+    {
+      "id": "mira",
+      "name": "Mira",
+      "role": "lamp keeper",
+      "essence": "Counts what the harbour forgets, and keeps the lamps lit for boats that are late."
+    },
+    {
+      "id": "the-ferryman",
+      "name": "The ferryman",
+      "role": "witness",
+      "essence": "Has rowed the same crossing for forty years and notices when the river changes its mind."
+    }
+  ],
+  "milestones": []
+}
